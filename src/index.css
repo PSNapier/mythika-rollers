@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background-color: theme('colors.neutral.600');
+}
+
+input[type="checkbox"] {
+	appearance: none;
+}
+
+input[type="text"] {
+	appearance: none;
+	background-color: #ffffff00;
+	border: solid theme(colors.neutral.200) 2.5px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: theme(colors.neutral.200);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.small-caps {
+	font-variant: small-caps;
+}
