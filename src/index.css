@@ -2,8 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body, #root {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	scrollbars: hidden;
+}
+
 body {
 	background-color: theme('colors.neutral.600');
+	background-image: url('assets/fogmountains.jpg');
+	background-size: cover;
+}
+
+#root {
+	background-color: hsla(0, 0%, 25%, 75%);
+	width: 100vw;
+	height: 100vh;
+	overflow: auto;
 }
 
 input[type="checkbox"] {
